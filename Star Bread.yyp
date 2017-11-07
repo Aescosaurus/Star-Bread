@@ -79,10 +79,26 @@
             }
         },
         {
+            "Key": "2ec81d18-8a4e-48db-833a-d8ac49a716d3",
+            "Value": {
+                "id": "764b0069-6ef9-477a-99d0-d714ffb92d11",
+                "resourcePath": "sprites\\s_Skein\\s_Skein.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37ee7885-e54e-44a0-a7d7-84bdc701a740",
             "Value": {
                 "id": "15e6dc13-b7f3-4cef-9f4a-f2e39966400d",
                 "resourcePath": "views\\37ee7885-e54e-44a0-a7d7-84bdc701a740.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "486d57d6-7327-4d1e-9c32-a5485f5a33ed",
+            "Value": {
+                "id": "aa45bf81-a31f-4d5b-9eca-ee01e8d3158f",
+                "resourcePath": "views\\486d57d6-7327-4d1e-9c32-a5485f5a33ed.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -223,6 +239,14 @@
             }
         },
         {
+            "Key": "dd2be403-628e-4cc1-afed-d04efa3ed269",
+            "Value": {
+                "id": "72d5bfdb-d706-4591-8af6-64975033a25d",
+                "resourcePath": "objects\\o_Skein\\o_Skein.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee0fdfb5-2b58-430f-bb24-485296a1fa2c",
             "Value": {
                 "id": "6914e85b-2095-441d-8a03-6902b1337ecb",
@@ -235,6 +259,14 @@
             "Value": {
                 "id": "ce98b560-ce6f-48c9-9556-b7858868845e",
                 "resourcePath": "sprites\\s_Moving\\s_Moving.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f40634fc-6d74-4810-9b1d-1f1c9e1bb08e",
+            "Value": {
+                "id": "78db293e-4bf5-4457-bab9-c03c32ced4f9",
+                "resourcePath": "sprites\\s_JumpAttack\\s_JumpAttack.yy",
                 "resourceType": "GMSprite"
             }
         },

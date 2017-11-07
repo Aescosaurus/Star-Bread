@@ -27,6 +27,8 @@
 // 	break;
 // }
 
+mySkein.willDraw = false;
+
 if( keyboard_check( vk_left ) )
 {
 	if( action == State.Idle )
@@ -70,17 +72,19 @@ if( jumping )
 		// action = State.Falling;
 	}
 }
-else if( action != State.Idle && action != State.Moving && grav >= 0 )
+else if( action != State.Idle && action != State.Moving && action != State.JumpAttack && grav >= 0 )
 {
 	action = State.Falling;
 }
 
-// if( grav > 1 )
-// {
-// 	action = State.Falling;
-// }
+if( keyboard_check( ord( "D" ) ) && canAttack &&
+  ( action == State.Jumping || ( action == State.Falling && !canJump ) ) )
+{
+	attacking = true;
+}
 
 // TODO: Optimize this to run only when changed.
+// Actually, maybe check it'll work first..
 if( action == State.Idle )
 {
 	sprite_index = s_Idle;
@@ -97,9 +101,78 @@ else if( action == State.Falling )
 {
 	sprite_index = s_Falling;
 }
+else if( action == State.JumpAttack )
+{ // TODO: Make this less gross and more consistent with other ifs.
+	// skeinTimer = 0;
+	sprite_index = s_JumpAttack;
+}
+
+// if( skeinTimer < skeinTime )
+// {
+// 	canAttack = true;
+// 	++skeinTimer;
+// 	
+// 	sprite_index = s_JumpAttack;
+// 	image_angle += -( rotSpeed * image_xscale );
+// 	mySkein.willDraw = true;
+// 	mySkein.x = x;
+// 	mySkein.y = y;
+// 	// Make me invincible.
+// }
+// else
+// {
+// 	canAttack = false;
+// 	refireTimer = 0;
+// }
+// 
+// if( refireTimer > refireTime )
+// {
+// 	canAttack = true;
+// }
+// else
+// {
+// 	++refireTimer;
+// }
+
+if( attacking )
+{
+	action = State.JumpAttack;
+	if( attackTimer > attackTime || canJump )
+	{
+		attacking = false;
+		action = State.Falling;
+		canAttack = false;
+		attackTimer = 0;
+	}
+	else
+	{
+		++attackTimer;
+		image_angle += -( rotSpeed * image_xscale );
+		mySkein.willDraw = true;
+		mySkein.x = x;
+		mySkein.y = y;
+		// Make me invincible.
+	}
+}
+
+if( !attacking )
+{
+	if( refireTimer > refireTime )
+	{
+		canAttack = true;
+		refireTimer = 0;
+	}
+	else
+	{
+		++refireTimer;
+	}
+}
 
 canJump = false;
 y += grav;
 grav += gravAcc;
 
-show_debug_message( action );
+if( action != State.JumpAttack )
+{
+	image_angle = 0;
+}
