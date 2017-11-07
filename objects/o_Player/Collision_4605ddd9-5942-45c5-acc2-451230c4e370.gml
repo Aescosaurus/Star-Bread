@@ -1,7 +1,7 @@
 /// @description Land!
 
-canJump = true;
-y -= grav / 2;
-grav = 0;
-action = State.Idle;
-canAttack = true;
+// canJump = true;
+// canAttack = true;
+// y -= grav / 2;
+// grav = 0;
+// action = State.Idle;
