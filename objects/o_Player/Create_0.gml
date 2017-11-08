@@ -14,7 +14,7 @@ action = State.Idle;
 moveSpeed = 5;
 rotSpeed = 30;
 
-jumpPower = 3;
+jumpPower = 4;
 jumpTime = 15;
 jumpTimer = 0;
 jumping = false;
