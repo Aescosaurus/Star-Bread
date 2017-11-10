@@ -28,6 +28,8 @@
 // }
 
 mySkein.willDraw = false;
+// Makes collisions not glitch out.
+mySkein.x = 99999;
 
 if( keyboard_check( vk_left ) )
 {

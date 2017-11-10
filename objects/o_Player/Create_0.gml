@@ -37,3 +37,6 @@ refireTimer = 0;
 // skeinTimer = 0;
 // refireTime = 200;
 // refireTimer = 0;
+
+minDamage = 10;
+maxDamage = 50;

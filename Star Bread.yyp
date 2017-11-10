@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "06ce6dd0-f332-4f1e-b3f9-095852abfa6f",
+            "Value": {
+                "id": "104c79ac-94b9-45ff-974a-72aa935cc1fa",
+                "resourcePath": "objects\\o_DamageNumber\\o_DamageNumber.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0c9d949f-4d51-439e-8866-214c69057cde",
             "Value": {
                 "id": "d20c2cfe-a91d-4961-b35d-7a9a85afd9be",
@@ -58,7 +66,7 @@
             "Key": "15111fbf-d796-4a9d-a844-aa53e617a8a5",
             "Value": {
                 "id": "2f1c9063-4ecf-4045-839c-2932ef937388",
-                "resourcePath": "objects\\o_Spitter\\o_Spitter.yy",
+                "resourcePath": "objects\\o_Flier\\o_Flier.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -239,6 +247,22 @@
             }
         },
         {
+            "Key": "810e47ea-2078-4a78-8c56-f01deb110c8f",
+            "Value": {
+                "id": "b9cefbc0-85d5-4241-a79f-d44cd10e1d93",
+                "resourcePath": "views\\810e47ea-2078-4a78-8c56-f01deb110c8f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8b5c7287-517f-4b9e-b57b-50eb4aa3a669",
+            "Value": {
+                "id": "fa161ff6-29fe-4c5e-8fe8-1dbb313333de",
+                "resourcePath": "views\\8b5c7287-517f-4b9e-b57b-50eb4aa3a669.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8c70140b-0af7-4d97-ad73-015444c84eda",
             "Value": {
                 "id": "a73b63da-300a-46a0-adb1-5e11f88405fb",
@@ -322,7 +346,7 @@
             "Key": "ad56869d-974c-4d27-8e04-37f95299967f",
             "Value": {
                 "id": "b40db5a6-aedc-4969-9272-14c9837597c5",
-                "resourcePath": "sprites\\s_Spitter\\s_Spitter.yy",
+                "resourcePath": "sprites\\s_Flier\\s_Flier.yy",
                 "resourceType": "GMSprite"
             }
         },
