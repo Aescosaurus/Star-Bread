@@ -10,7 +10,7 @@
         "1b62fe84-74a9-471e-9f53-9a3b3ff81c65"
     ],
     "filterType": "GMObject",
-    "folderName": "Level 1",
+    "folderName": "Level 0",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
