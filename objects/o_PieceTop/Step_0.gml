@@ -15,3 +15,8 @@ do
 	}
 }
 until( result == 0 );
+
+if( global.mapNum > 0 )
+{
+	x = 9999;
+}
