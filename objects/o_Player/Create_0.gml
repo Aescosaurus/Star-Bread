@@ -40,3 +40,5 @@ refireTimer = 0;
 
 minDamage = 10;
 maxDamage = 50;
+
+canGetHit = true;

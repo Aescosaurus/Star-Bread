@@ -20,5 +20,6 @@ if( lastKnownGood != global.mapNum )
 
 if( hp < 1 )
 {
+	++global.scoree;
 	lastKnownGood = global.mapNum;
 }
