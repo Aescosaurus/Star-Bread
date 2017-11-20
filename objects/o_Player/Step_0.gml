@@ -31,7 +31,7 @@ mySkein.willDraw = false;
 // Makes collisions not glitch out.
 mySkein.x = 99999;
 
-if( keyboard_check( vk_left ) )
+if( keyboard_check( vk_left ) && x - 32 > 0 )
 {
 	if( action == State.Idle )
 	{
@@ -40,7 +40,7 @@ if( keyboard_check( vk_left ) )
 	x -= moveSpeed;
 	image_xscale = -1;
 }
-if( keyboard_check( vk_right ) )
+if( keyboard_check( vk_right ) && x + 32 < 1920 )
 {
 	if( action == State.Idle )
 	{

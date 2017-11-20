@@ -12,7 +12,9 @@ else
 	vx = -spd;
 }
 
-hp = 1000;
+hp = 200;
 
 invulPeriod = 10;
 invulTimer = 0;
+
+lastKnownGood = 9999;
